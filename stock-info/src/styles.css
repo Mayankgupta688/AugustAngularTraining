@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 .container-body {
     padding: 10px;
     margin: 10px;

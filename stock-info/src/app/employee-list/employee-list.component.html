@@ -1,0 +1,9 @@
+<div style="display: inline;">
+    <div *ngFor="let employee of employeeList" class="card">
+        <img [src]="employee.image" class="card-img-top" [title]="employee.name" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">{{employee.name}}</h5>
+        <p class="card-text">{{employee.info}}</p>
+        <a href="#" class="btn btn-primary">Delete</a>
+    </div>
+</div>
