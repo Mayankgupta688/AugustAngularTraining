@@ -9,6 +9,10 @@ import { MainApplicationComponent } from "./app/mainApplication/mainApplication.
 import { CounterAppComponent } from './app/counter-app/counter-app.component';
 import { EmployeeListComponent } from './app/employee-list/employee-list.component';
 import { ErrorRenderingComponent } from './app/error-rendering/error-rendering.component';
+import { EmployeeDetailsComponent } from './app/employee-details/employee-details.component';
+import { EmployeeCountComponent } from './app/employee-count/employee-count.component';
+import { EventInvokerComponent } from './app/event-invoker/event-invoker.component';
+import { EventCaptureComponent } from './app/event-capture/event-capture.component';
 
 @NgModule({
     declarations: [ 
@@ -20,9 +24,13 @@ import { ErrorRenderingComponent } from './app/error-rendering/error-rendering.c
         HeaderComponent,
         CounterAppComponent,
         EmployeeListComponent,
-        ErrorRenderingComponent
+        ErrorRenderingComponent,
+        EmployeeDetailsComponent,
+        EmployeeCountComponent,
+        EventInvokerComponent,
+        EventCaptureComponent
     ],
     imports: [ BrowserModule ],
-    bootstrap: [ EmployeeListComponent ]
+    bootstrap: [ EventInvokerComponent, EventCaptureComponent ]
 })
 export class AppModule { }

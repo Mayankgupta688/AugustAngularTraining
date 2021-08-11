@@ -1,16 +1,17 @@
-<h1>Employee Length: {{employeeList.length}}</h1>
+<app-employee-count></app-employee-count><br/><br/><hr/>
 
 <div *ngIf="employeeList.length; else template" style="display: inline;">
 
-    <h2 [class.special]="isSpecial">The List of Employee is given below:</h2>
+    <h2 [class.special]="isSpecial">
+        The List of Employee is given below:
+    </h2>
 
     <div *ngFor="let employee of employeeList" class="card">
-        <img [src]="employee.image" class="card-img-top" [title]="employee.name" alt="...">
-        <div class="card-body">
-            <h5 [style.color]="textColor" class="card-title">{{employee.name}}</h5>
-            <p [class]="applyClassName" class="card-text">{{employee.info}}</p>
-            <input (click)="deleteEmployee(employee.name)" type="button" class="btn btn-primary" value="Delete {{employee.name}}">
-        </div>
+        <app-employee-details 
+            [userName]="userName"
+            [employeeDetails]="employee"
+            (deleteEventEmitter)="deleteEmployee($event)">
+        </app-employee-details>
     </div>
 </div>
 

@@ -1,0 +1,10 @@
+
+
+<div>
+    <img [src]="employeeDetails.image" class="card-img-top" [title]="employeeDetails.name" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{employeeDetails.name}} | {{userName}}</h5>
+        <p class="card-text">{{employeeDetails.info}}</p>
+        <input type="button" (click)="notifyToDelete(employeeDetails.name)" class="btn btn-primary" value="Delete {{employeeDetails.name}}">
+    </div>
+</div>
