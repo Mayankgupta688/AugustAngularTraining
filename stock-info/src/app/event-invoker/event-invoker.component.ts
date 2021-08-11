@@ -8,9 +8,17 @@ import { AppService } from 'src/services/app.service';
 })
 export class EventInvokerComponent implements OnInit {
 
+  userName = "Mayank Gupta";
+  salary: number = 1000;
   constructor(private _dataService: AppService) { 
     setInterval(() => {
-      this._dataService.eventNotifier.emit(`${new Date().getHours()} : ${new Date().getMinutes()} : ${new Date().getSeconds()}`)
+      this._dataService.eventNotifier.emit(
+        `
+          ${new Date().getHours()} : 
+          ${new Date().getMinutes()} : 
+          ${new Date().getSeconds()}
+        `
+      )
     }, 1000)
 
   }

@@ -9,9 +9,11 @@ import { AppService } from 'src/services/app.service';
 export class EventCaptureComponent implements OnInit {
   currentTime: string = "";
   constructor(private _dataService: AppService) { 
-    this._dataService.eventNotifier.subscribe((currentTimeFromEvent) => {
+    this._dataService.eventNotifier.subscribe(
+      (currentTimeFromEvent) => {
       this.currentTime = currentTimeFromEvent;
-    })
+      }
+    )
   }
 
   ngOnInit(): void {
