@@ -7,27 +7,45 @@ import { Component } from '@angular/core';
 })
 export class EmployeeListComponent {
 
-  employeeList = [{
+  employeeListCount: number = 11;
+
+  textColor: string = "red";
+  applyClassName = "sample-class";
+  isSpecial = false;
+
+  employeeList: any = [{
     name: "Mayank Gupta",
-    info: "Mayank is Working as a Trainer for Frontent Technologies...",
-    image: "https://st3.depositphotos.com/1000975/17945/i/600/depositphotos_179453774-stock-photo-businessman-winning-best-employee-of.jpg"
+    info: "Working for TechnoFunnel",
+    image: "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/images/stock-photography/hr/usecase-marquee-hr.jpg"
   }, {
     name: "Anshul Gupta",
-    info: "Anshul is Working as a Trainer for Frontent Technologies...",
-    image: "https://st3.depositphotos.com/1000975/17945/i/600/depositphotos_179453774-stock-photo-businessman-winning-best-employee-of.jpg"
-  }, {
-    name: "Meha Gupta",
-    info: "Meha is Working as a Trainer for Frontent Technologies...",
-    image: "https://st3.depositphotos.com/1000975/17945/i/600/depositphotos_179453774-stock-photo-businessman-winning-best-employee-of.jpg"
+    info: "Working for TechnoFunnel",
+    image: "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/images/stock-photography/hr/usecase-marquee-hr.jpg"
   }, {
     name: "Ankit Gupta",
-    info: "Ankit is Working as a Trainer for Frontent Technologies...",
-    image: "https://st3.depositphotos.com/1000975/17945/i/600/depositphotos_179453774-stock-photo-businessman-winning-best-employee-of.jpg"
+    info: "Working for TechnoFunnel",
+    image: "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/images/stock-photography/hr/usecase-marquee-hr.jpg"
   }, {
-    name: "Aniket Gupta",
-    info: "Aniket is Working as a Trainer for Frontent Technologies...",
-    image: "https://st3.depositphotos.com/1000975/17945/i/600/depositphotos_179453774-stock-photo-businessman-winning-best-employee-of.jpg"
+    name: "Meha Gupta",
+    info: "Working for TechnoFunnel",
+    image: "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/images/stock-photography/hr/usecase-marquee-hr.jpg"
   }]
-  constructor() { }
+
+  deleteEmployee(empName: string) {
+    this.employeeList = this.employeeList.filter((employee: any) => {
+      return employee.name != empName;
+    })
+    alert("Deleting " + empName)
+  }
+
+  constructor() { 
+    setTimeout(() => {
+      this.textColor = "green";
+    }, 5000)
+
+    setTimeout(() => {
+      this.textColor = "aqua";
+    }, 10000)
+  }
 
 }

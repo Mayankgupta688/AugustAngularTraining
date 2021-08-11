@@ -8,6 +8,7 @@ import { HeaderComponent } from "./app/mainApplication/headerComponent/header.co
 import { MainApplicationComponent } from "./app/mainApplication/mainApplication.component";
 import { CounterAppComponent } from './app/counter-app/counter-app.component';
 import { EmployeeListComponent } from './app/employee-list/employee-list.component';
+import { ErrorRenderingComponent } from './app/error-rendering/error-rendering.component';
 
 @NgModule({
     declarations: [ 
@@ -18,7 +19,8 @@ import { EmployeeListComponent } from './app/employee-list/employee-list.compone
         FooterComponent,
         HeaderComponent,
         CounterAppComponent,
-        EmployeeListComponent
+        EmployeeListComponent,
+        ErrorRenderingComponent
     ],
     imports: [ BrowserModule ],
     bootstrap: [ EmployeeListComponent ]
