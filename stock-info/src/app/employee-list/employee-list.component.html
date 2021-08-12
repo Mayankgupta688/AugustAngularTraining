@@ -7,11 +7,13 @@
     </h2>
 
     <div *ngFor="let employee of employeeList" class="card">
-        <app-employee-details 
-            [userName]="userName"
-            [employeeDetails]="employee"
-            (deleteEventEmitter)="deleteEmployee($event)">
-        </app-employee-details>
+        <ng-container *ngIf="employee.name != 'Mayank Gupta'">
+            <app-employee-details 
+                [userName]="userName"
+                [employeeDetails]="employee"
+                (deleteEventEmitter)="deleteEmployee($event)">
+            </app-employee-details>
+        </ng-container>
     </div>
 </div>
 

@@ -1,5 +1,8 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
+
 import { AppComponent } from "./app/appComponent/app.component";
 import { AppComponentOther } from "./app/appOtherComponent/app.other.component";
 import { ContentComponent } from "./app/mainApplication/contentComponent/content.component";
@@ -13,6 +16,13 @@ import { EmployeeDetailsComponent } from './app/employee-details/employee-detail
 import { EmployeeCountComponent } from './app/employee-count/employee-count.component';
 import { EventInvokerComponent } from './app/event-invoker/event-invoker.component';
 import { EventCaptureComponent } from './app/event-capture/event-capture.component';
+import { ListingEmployeeComponent } from './app/listing-employee/listing-employee.component';
+import { TwowayBindingComponent } from './app/twoway-binding/twoway-binding.component';
+import { ApplyDirectiveComponent } from './app/apply-directive/apply-directive.component';
+import { DelayDirective } from "./directives/delay.directive";
+import { TwowayChildBindingComponent } from "./app/twoway-binding/twoway-binding.component";
+import { PipeImplementerComponent } from './app/pipe-implementer/pipe-implementer.component';
+import { ReplacePipe } from "./pipes/replace.pipe";
 
 @NgModule({
     declarations: [ 
@@ -28,9 +38,16 @@ import { EventCaptureComponent } from './app/event-capture/event-capture.compone
         EmployeeDetailsComponent,
         EmployeeCountComponent,
         EventInvokerComponent,
-        EventCaptureComponent
+        EventCaptureComponent,
+        ListingEmployeeComponent,
+        TwowayBindingComponent,
+        ApplyDirectiveComponent,
+        DelayDirective,
+        TwowayChildBindingComponent,
+        PipeImplementerComponent,
+        ReplacePipe
     ],
-    imports: [ BrowserModule ],
-    bootstrap: [ EventInvokerComponent, EventCaptureComponent ]
+    imports: [ BrowserModule, HttpClientModule, FormsModule ],
+    bootstrap: [ EmployeeListComponent ]
 })
 export class AppModule { }

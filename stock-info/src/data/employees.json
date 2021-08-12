@@ -1,0 +1,64 @@
+{
+    "employees":[
+       {
+          "id":"1",
+          "createdAt":"2018-12-03T11:37:42.015Z",
+          "name":"Ms. Gaylord Streich",
+          "avatar":"https://tse4.mm.bing.net/th?id=OIP.7pSWjRUrR3ziOXRTxMgjsQHaE8&pid=Api&P=0&w=246&h=165"
+       },
+       {
+          "id":"2",
+          "createdAt":"2018-12-02T21:06:49.825Z",
+          "name":"Roxanne Kunde",
+          "avatar":"https://tse4.mm.bing.net/th?id=OIP.7pSWjRUrR3ziOXRTxMgjsQHaE8&pid=Api&P=0&w=246&h=165"
+       },
+       {
+          "id":"3",
+          "createdAt":"2018-12-03T03:37:39.995Z",
+          "name":"Dante Spencer",
+          "avatar":"https://tse4.mm.bing.net/th?id=OIP.7pSWjRUrR3ziOXRTxMgjsQHaE8&pid=Api&P=0&w=246&h=165"
+       },
+       {
+          "id":"4",
+          "createdAt":"2018-12-03T11:07:34.261Z",
+          "name":"Benny Hartmann",
+          "avatar":"https://tse4.mm.bing.net/th?id=OIP.7pSWjRUrR3ziOXRTxMgjsQHaE8&pid=Api&P=0&w=246&h=165"
+       },
+       {
+          "id":"5",
+          "createdAt":"2018-12-03T11:38:36.583Z",
+          "name":"Easton Fisher",
+          "avatar":"https://tse4.mm.bing.net/th?id=OIP.7pSWjRUrR3ziOXRTxMgjsQHaE8&pid=Api&P=0&w=246&h=165"
+       },
+       {
+          "id":"6",
+          "createdAt":"2018-12-02T17:48:52.784Z",
+          "name":"Mrs. Brandi Grant",
+          "avatar":"https://tse4.mm.bing.net/th?id=OIP.7pSWjRUrR3ziOXRTxMgjsQHaE8&pid=Api&P=0&w=246&h=165"
+       },
+       {
+          "id":"7",
+          "createdAt":"2018-12-02T17:57:35.899Z",
+          "name":"Leopoldo Ortiz",
+          "avatar":"https://tse4.mm.bing.net/th?id=OIP.7pSWjRUrR3ziOXRTxMgjsQHaE8&pid=Api&P=0&w=246&h=165"
+       },
+       {
+          "id":"8",
+          "createdAt":"2018-12-03T06:31:54.963Z",
+          "name":"Marielle Zulauf",
+          "avatar":"https://tse4.mm.bing.net/th?id=OIP.7pSWjRUrR3ziOXRTxMgjsQHaE8&pid=Api&P=0&w=246&h=165"
+       },
+       {
+          "id":"9",
+          "createdAt":"2018-12-03T00:28:30.136Z",
+          "name":"Maynard Hilll",
+          "avatar":"https://tse4.mm.bing.net/th?id=OIP.7pSWjRUrR3ziOXRTxMgjsQHaE8&pid=Api&P=0&w=246&h=165"
+       },
+       {
+          "id":"10",
+          "createdAt":"2018-12-03T13:42:04.578Z",
+          "name":"Jovanny Dare",
+          "avatar":"https://tse4.mm.bing.net/th?id=OIP.7pSWjRUrR3ziOXRTxMgjsQHaE8&pid=Api&P=0&w=246&h=165"
+       }
+    ]
+ }

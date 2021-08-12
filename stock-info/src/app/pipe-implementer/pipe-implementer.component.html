@@ -1,0 +1,10 @@
+
+
+<p>pipe-implementer works!</p>
+
+<input type="text" [(ngModel)]="userName" /><br/><br/>
+<h4>Input value is {{userName | replacePipe : "_" : "--"}}</h4>
+<h4>Input value is {{userName | replacePipe : "_" : ", "}}</h4>
+<h4>Input value is {{userName | replacePipe : "_" : "_____"}}</h4>
+<h4>Input value is {{userName | replacePipe : "M" : "Small(m)"}}</h4>
+<h6>Original value is {{userName}}</h6>

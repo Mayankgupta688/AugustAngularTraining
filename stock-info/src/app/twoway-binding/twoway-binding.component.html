@@ -1,0 +1,9 @@
+<b>User Name is</b><input type="text" [(ngModel)]="userName" /><br/><br/>
+
+<input type="button" value="Get Value" (click)="getUserValue()" />
+
+<input type="button" value="Set Value" (click)="setUserValue()" /><br/><br/>
+
+<h6>User Name is {{userName}}</h6><br/><hr/>
+
+<app-twoway-child-binding [userNameChild]="userName"></app-twoway-child-binding>
